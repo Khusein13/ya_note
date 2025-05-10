@@ -42,6 +42,7 @@ def test_pages_availability_for_auth_user(not_author_client, name):
     'name',
     ('notes:detail', 'notes:edit', 'notes:delete'),
 )
+
 def test_pages_availability_for_different_users(
         parametrized_client, name, note, expected_status
 ):
